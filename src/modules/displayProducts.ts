@@ -10,7 +10,7 @@ export function displayProducts(products: Products[]): void {
 }
 
 function createProductCards({ images, title, description, rating, stock, category }: Products, container: HTMLDivElement): void {
-    const h1El = document.querySelector('h1');
+    const h1El = document.querySelector('h1') as HTMLHeadingElement;
 
     if (document.body.contains(h1El)) {
     h1El.remove();
