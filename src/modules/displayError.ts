@@ -9,7 +9,7 @@ export function displayError(error: CustomError): void {
     if (error.status === 404) { 
         h1El.innerText = 'No results found. Check if your spelling is correct and try again!';
     } else { 
-        h1El.innerText = 'Something went wrong. Try again later!';
+        h1El.innerText = 'Something went wrong! Try again later.';
     }
 
     document.body.append(h1El);
